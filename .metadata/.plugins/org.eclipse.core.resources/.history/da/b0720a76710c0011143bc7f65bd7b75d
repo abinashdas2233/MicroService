@@ -1,0 +1,5 @@
+package com.amazonorder.entity;
+
+public class OrderEntity {
+
+}

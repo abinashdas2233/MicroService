@@ -1,0 +1,25 @@
+package com.amazonorder.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.amazonorder.request.OrderRequest;
+import com.amazonorder.service.OrderService;
+
+@RestController
+@RequestMapping("/amazon")
+public class OrderController {
+	@Autowired
+	OrderService service;
+	
+	@PostMapping("/createorder")
+	public ResponseEntity createOrder(@RequestBody OrderRequest order ) {
+		
+		return service.createOrder(order);
+		
+	}
+}

@@ -1,0 +1,5 @@
+package com.amazonorder.repo;
+
+public interface OrderRepo {
+
+}

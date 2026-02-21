@@ -1,0 +1,5 @@
+package com.amazonorder.service;
+
+public interface OrderService {
+
+}
