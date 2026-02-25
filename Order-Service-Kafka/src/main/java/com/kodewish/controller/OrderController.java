@@ -20,5 +20,11 @@ public class OrderController {
 		
 		
 	}
+	
+	@PostMapping("/rawdata")
+	public String rawData(@RequestBody AmazonOrderRequest req) {
+		// this method is for demo purpose for kafa partion and consumer distrubation
+		return service.rawData(req);
+	}
 
 }

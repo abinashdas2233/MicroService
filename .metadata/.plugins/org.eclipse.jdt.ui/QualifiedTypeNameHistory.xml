@@ -30,6 +30,6 @@
     <fullyQualifiedTypeName name="com.fasterxml.jackson.core.JsonProcessingException"/>
     <fullyQualifiedTypeName name="com.kodewish.request.AmazonOrderRequest"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
-    <fullyQualifiedTypeName name="com.kodewish.response.Notification"/>
     <fullyQualifiedTypeName name="org.springframework.kafka.annotation.KafkaListener"/>
+    <fullyQualifiedTypeName name="com.kodewish.response.Notification"/>
 </qualifiedTypeNameHistroy>

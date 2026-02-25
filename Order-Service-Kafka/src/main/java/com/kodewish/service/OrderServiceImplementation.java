@@ -46,4 +46,13 @@ public class OrderServiceImplementation implements OrderService{
 		return json;
 	}
 
+
+	@Override
+	public String rawData(AmazonOrderRequest req) {
+		for(int i=1;i<=1000;i++) {
+		kafkaproducer.producerMessage("order-data", convertObjToJson(req));
+		}
+		return "data sent";
+	}
+
 }
