@@ -13,7 +13,7 @@ public class KafkaProducer {
 	
 	public void producerMessage(String _topic, String _message) {
 		// send message to kafka broker
-		kafkaTemplate.send(_topic, _message);
+		kafkaTemplate.send(_topic, _message); //it's return type is compitable future
 	}
 	
 	
